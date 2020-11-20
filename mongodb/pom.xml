@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>stackoverflow.issues.r329433.mongodb</groupId>
+  <artifactId>MongoIssue</artifactId>
+  <version>1.0</version>
+
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>12</maven.compiler.source>
+		<maven.compiler.target>12</maven.compiler.target>
+	</properties>
+
+	<dependencyManagement />
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.12.1</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.11.3</version>
+		</dependency>
+
+	</dependencies>
+	<modules />
+
+	<!-- Project Information -->
+	<name>Database</name>
+	<description>A simple project.</description>
+	<url></url>
+	<inceptionYear />
+	<licenses />
+	<organization />
+	<developers />
+	<contributors />
+
+	<!-- Build Settings -->
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>1.2.1</version>
+					<configuration>
+						<mainClass>stackoverflow.issues.r329433.mongodb.App</mainClass>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<resources></resources>
+		<testResources></testResources>
+	</build>
+	<reporting />
+
+	<!-- Environment Settings -->
+	<issueManagement />
+	<ciManagement />
+	<mailingLists />
+	<scm />
+	<prerequisites />
+	<repositories>
+
+	</repositories>
+	<pluginRepositories />
+	<distributionManagement />
+	<profiles />
+</project>
