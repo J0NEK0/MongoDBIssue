@@ -1,5 +1,6 @@
 package stackoverflow.issues.r329433.mongodb.pojos;
 
+import org.bson.codecs.pojo.annotations.BsonCreator;
 import org.bson.codecs.pojo.annotations.BsonDiscriminator;
 import org.bson.codecs.pojo.annotations.BsonProperty;
 
@@ -8,6 +9,7 @@ public class SpecificItem extends GenericItem<StringID> {
 
 	private String genericProperty;
 
+	@BsonCreator
 	public SpecificItem(@BsonProperty("id") StringID id, @BsonProperty("genericProperty") String genericProperty) {
 		super(id, genericProperty);
 		this.genericProperty = genericProperty;
