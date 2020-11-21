@@ -8,7 +8,7 @@ import org.bson.codecs.pojo.annotations.BsonProperty;
 public abstract class GenericItem<T extends Identification> extends BasicDBItem<T> {
 
 	@BsonCreator
-	public GenericItem(@BsonProperty("id") T id, @BsonProperty("genericProperty") String genericProperty) {
+	public GenericItem(@BsonProperty("id") T id) {
 		super(id);
 		
 	}
