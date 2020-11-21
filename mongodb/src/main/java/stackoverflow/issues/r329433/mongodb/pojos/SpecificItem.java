@@ -8,10 +8,10 @@ import org.bson.codecs.pojo.annotations.BsonProperty;
 public class SpecificItem extends GenericItem<StringID> {
 
 	private String genericProperty;
-
+	
 	@BsonCreator
 	public SpecificItem(@BsonProperty("id") StringID id, @BsonProperty("genericProperty") String genericProperty) {
-		super(id, genericProperty);
+		super(id);
 		this.genericProperty = genericProperty;
 	}
 
